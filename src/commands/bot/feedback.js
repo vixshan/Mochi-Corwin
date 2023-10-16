@@ -1,10 +1,5 @@
 const Discord = require('discord.js');
 
-const webhookClient = new Discord.WebhookClient({
-    id: "831574783324848188",
-    token: "UMFd7fPeeV7sHewjglLuAyM1819qA6AG8_-8VcIcA-bveVODYXy9Hko3pe0sWWgz9oDa",
-});
-
 module.exports = async (client, interaction, args) => {
     const feedback = interaction.options.getString('feedback');
 
@@ -15,15 +10,18 @@ module.exports = async (client, interaction, args) => {
         )
         .setDescription(`${feedback}`)
         .setColor(client.config.colors.normal)
-    webhookClient.send({
-        username: 'Bot Feedback',
-        embeds: [embed],
-    });
+
+    // Get the channel ID from the .env file.
+    const channelId = process.env.FEEDBACK_CHANNEL_ID;
+
+    // Get the channel with the ID from the .env file.
+    const channel = client.channels.cache.get(channelId);
+
+    // Send the embed to the channel.
+    channel.send({ embeds: [embed] });
 
     client.succNormal({ 
         text: `Feedback successfully sent to the developers`,
         type: 'editreply'
     }, interaction);
 }
-
- 

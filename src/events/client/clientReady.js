@@ -3,11 +3,6 @@ const chalk = require('chalk');
 const { random } = require('mathjs');
 
 module.exports = async (client) => {
-    const startLogs = new Discord.WebhookClient({
-        id: client.webhooks.startLogs.id,
-        token: client.webhooks.startLogs.token,
-    });
-
     console.log(`\u001b[0m`);
     console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`Shard #${client.shard.ids[0] + 1}`), chalk.green(`is ready!`))
     console.log(chalk.blue(chalk.bold(`Bot`)), (chalk.white(`>>`)), chalk.green(`Started on`), chalk.red(`${client.guilds.cache.size}`), chalk.green(`servers!`))
@@ -20,10 +15,12 @@ module.exports = async (client) => {
             { name: "📃┆State", value: `Ready`, inline: true },
         )
         .setColor(client.config.colors.normal)
-    startLogs.send({
-        username: 'Bot Logs',
-        embeds: [embed],
-    });
+
+    // Get the channel with the ID from the .env file.
+    const channel = client.channels.cache.get(process.env.LOG_CHANNEL_ID);
+
+    // Send the embed to the channel.
+    channel.send({ embeds: [embed] });
 
     setInterval(async function () {
         const promises = [
@@ -51,4 +48,3 @@ module.exports = async (client) => {
 
     client.player.init(client.user.id);
 }
-

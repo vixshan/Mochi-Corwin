@@ -25,7 +25,7 @@ module.exports = async (client, interaction, args) => {
                 fields: [
                {
                     name: "ℹ️┆Information",
-                    value: `Bot is a bot with which you can run your entire server! With no less than 350+ commands, we have a large bot with many options to improve your server!`,
+                    value: `<@1009149789914546287> is a bot with which you can run your entire server! With no less than 350+ commands, we have a large bot with many options to improve your server!`,
                     inline: false,
                 },
                 {
@@ -50,12 +50,12 @@ module.exports = async (client, interaction, args) => {
                 },
                 {
                     name: "🔧┆Bot owner",
-                    value: `<@!755297485328482356> `,
+                    value: `<@!929835843479302204> `,
                     inline: true,
                 },
                 {
                     name: "🔧┆Bot developer",
-                    value: `<@!755297485328482356> <@!884553151666061372>`,
+                    value: `<@!929835843479302204> `,
                     inline: true,
                 },
                 {

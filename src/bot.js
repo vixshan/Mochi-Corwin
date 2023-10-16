@@ -117,7 +117,6 @@ require("./database/connect")();
 
 // Client settings
 client.config = require('./config/bot');
-client.changelogs = require('./config/changelogs');
 client.emotes = require("./config/emojis.json");
 client.webhooks = require("./config/webhooks.json");
 const webHooksArray = ['startLogs', 'shardLogs', 'errorLogs', 'dmLogs', 'voiceLogs', 'serverLogs', 'serverLogs2', 'commandLogs', 'consoleLogs', 'warnLogs', 'voiceErrorLogs', 'creditLogs', 'evalLogs', 'interactionLogs'];
