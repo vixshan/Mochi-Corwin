@@ -1,8 +1,12 @@
-## 1.0.1
+## Mochi v1.0.1
 
 ### New
 * 🎉 The bot now sends feedback in a channel instead of using webhooks.
-* 🎉 Changelog command now pulls the changelog from this changelog.md
+* 🎉 Changelog command now pulls the changelog from the [changelog.md](./CHANGELOG.md) on its GitHub repo.
+
+## Corwin v1.0.0
+
+### New
 * 🎶 Better music system
 * 🎉 New Activities
 * 📊 New server stats
