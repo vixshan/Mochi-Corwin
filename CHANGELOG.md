@@ -1,7 +1,10 @@
 ## Mochi v1.0.2
 
 ### Fixed
-* 🛠 fixed Mongoose update 
+* 🛠 fixed Mongoose deprecation warnings
+
+### Removed
+* 🗑️ Removed the `changelog` duplicate command.
 
 ### Developer
 * ♻️ Switched to 'kleur' from 'chalk' for console colors due recent chalk updates incompatibility.
