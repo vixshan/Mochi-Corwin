@@ -29,7 +29,7 @@ module.exports = (client) => {
         });
 
         setTimeout(() => {
-            if (channel.type ==  Discord.ChannelType.GuildStageVoice) {
+            if (channel.type == Discord.ChannelType.GuildStageVoice) {
                 channel.guild.members.me.voice.setSuppressed(false);
             }
         }, 500)
@@ -61,7 +61,6 @@ module.exports = (client) => {
         connection.destroy();
     }
 
-
     player.on('stateChange', (oldState, newState) => {
         if (newState.status === Voice.AudioPlayerStatus.Idle) {
             client.startStream(process.env.RADIO || "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538")
@@ -75,22 +74,20 @@ module.exports = (client) => {
 
     client.on(Discord.Events.ClientReady, async () => {
         client.startStream(process.env.RADIO || "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538");
-        
-        Schema.find(async (err, data) => {
-            if (data) {
-                for (var i = 0; i < data.length; i++) {
-                    try {
-                        const channel = await client.channels.fetch(data[i].Channel)
 
-                        if (channel) {
-                            client.radioStart(channel);
-                        }
+        try {
+            const data = await Schema.find().exec();
+            for (let i = 0; i < data.length; i++) {
+                try {
+                    const channel = await client.channels.fetch(data[i].Channel);
+
+                    if (channel) {
+                        client.radioStart(channel);
                     }
-                    catch { }
-                }
+                } catch { }
             }
-        })
+        } catch (err) {
+            // Handle the error, if needed
+        }
     });
 }
-
- 

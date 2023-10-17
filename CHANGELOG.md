@@ -1,7 +1,11 @@
 ## Mochi v1.0.2
 
+### Fixed
+* 🛠 fixed Mongoose update 
+
 ### Developer
-* 🎉 Switched to 'kleur' from 'chalk' for console colors due recent chalk updates incompatibility.
+* ♻️ Switched to 'kleur' from 'chalk' for console colors due recent chalk updates incompatibility.
+* ⚙️ Updated all dependencies to latest versions.
 
 ## Mochi v1.0.1
 
