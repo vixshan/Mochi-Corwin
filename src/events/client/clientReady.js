@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
-const chalk = require('chalk');
+const kleur = require('kleur');
 const { random } = require('mathjs');
 
 module.exports = async (client) => {
     console.log(`\u001b[0m`);
-    console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`Shard #${client.shard.ids[0] + 1}`), chalk.green(`is ready!`))
-    console.log(chalk.blue(chalk.bold(`Bot`)), (chalk.white(`>>`)), chalk.green(`Started on`), chalk.red(`${client.guilds.cache.size}`), chalk.green(`servers!`))
+    console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), kleur.red(`Shard #${client.shard.ids[0] + 1}`), kleur.green(`is ready!`))
+    console.log(kleur.blue(kleur.bold(`Bot`)), (kleur.white(`>>`)), kleur.green(`Started on`), kleur.red(`${client.guilds.cache.size}`), kleur.green(`servers!`))
 
     let embed = new Discord.EmbedBuilder()
         .setTitle(`🆙・Finishing shard`)
