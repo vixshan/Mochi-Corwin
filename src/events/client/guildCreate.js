@@ -64,7 +64,7 @@ module.exports = async (client, guild) => {
             );
 
         client.embed({
-            title: "Thanks for inviting the bot!",
+            title: "Thanks for inviting <@1009149789914546287>!",
             image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/bot_banner_invite.jpg",
             fields: [{
                 name: "❓┆How to setup?",
@@ -73,7 +73,7 @@ module.exports = async (client, guild) => {
             },
             {
                 name: "☎️┆I need help what now?",
-                value: `You can DM <@755297485328482356> for support or joining the [[Support server]](${client.config.discord.serverInvite})`,
+                value: `You can DM <@929835843479302204> for support or joining the [[Support server]](${client.config.discord.serverInvite})`,
                 inline: false,
             },
             {

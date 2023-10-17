@@ -7,7 +7,7 @@ module.exports = async (client, interaction, args) => {
   const octokit = new Octokit();
   const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
     owner: 'vixshan',
-    repo: 'mochi',
+    repo: 'Mochi',
     path: 'CHANGELOG.md',
   });
 
