@@ -1,3 +1,8 @@
+# Version: v1.0.0
+
+* [#2](https://github.com/vixshan/Mochi/pull/2): Bump jsdom from 21.1.2 to 22.1.0
+
+
 ## Mochi v1.0.1
 
 ### New
