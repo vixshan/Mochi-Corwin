@@ -3,7 +3,6 @@ const { ContextMenuCommandBuilder } = require('discord.js');
 const Discord = require('discord.js');
 const axios = require("axios");
 
-const model = require('../../database/models/badge');
 
 module.exports = {
     data: new ContextMenuCommandBuilder()

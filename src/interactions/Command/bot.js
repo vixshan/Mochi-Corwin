@@ -33,11 +33,6 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('links')
-                .setDescription('Get a message with all the Bot links')
-        )
-        .addSubcommand(subcommand =>
-            subcommand
                 .setName('owner')
                 .setDescription('Get info about the owner')
         )

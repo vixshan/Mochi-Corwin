@@ -16,7 +16,7 @@ module.exports = async (client, interaction, args) => {
 
             client.embed({
                 title: `${client.emotes.normal.pong}・Pong`,
-                desc: `Check out how fast our bot is`,
+                desc: `Check out how fast <@1009149789914546287> is`,
                 fields: [
                     {
                         name: "🤖┆Bot latency",

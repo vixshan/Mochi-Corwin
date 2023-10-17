@@ -2,7 +2,19 @@
 
 ### New
 * 🎉 The bot now sends feedback in a channel instead of using webhooks.
+
+### Developer
+* 🤖 Corwin Bot is now Mochi
 * 🎉 Changelog command now pulls the changelog from the [changelog.md](./CHANGELOG.md) on its GitHub repo.
+
+### Removed
+* 🗑️ Removed the `links` and links pannel commands due to duplication.
+* 🗑️ Removed the `developer args` command.
+* 🗑️ Removed the `developer eval` command.
+* 🗑️ Removed the `developer badge` command.
+* 🗑️ Removed the `developer ban` command.
+* 🗑️ Removed the `developer credits` command.
+* 🗑️ Removed the `add developer` script.
 
 ## Corwin v1.0.0
 

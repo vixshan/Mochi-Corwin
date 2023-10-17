@@ -1,6 +1,7 @@
 
 [![Version][version-shield]](version-url)
 [![Contributors][contributors-shield]][contributors-url]
+[![PRs][pr-shield]][pr-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -116,12 +117,8 @@ npm run start
 
 [Support Server](https://discord.gg/uMgS9evnmv) - Mochi's Support Server Invite
 
-# <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Faq
-> How to get access to Developers Commands? You will have to set them up via MongoDB or run the below command.
+# <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》
 
-```bash
-npm run add-dev YOUR_ID
-```
 # Donate
 
  By Donating, You Will Help Me To Maintain This Project 
@@ -130,6 +127,8 @@ npm run add-dev YOUR_ID
 
 [version-shield]: https://img.shields.io/github/package-json/v/vixshan/Mochi?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
+[pr-shield]: https://img.shields.io/github/issues-pr/vixshan/Mochi?style=for-the-badge
+[pr-url]: https://github.com/vixshan/Mochi/pulls
 [contributors-shield]: https://img.shields.io/github/contributors/vixshan/Mochi.svg?style=for-the-badge
 [contributors-url]: https://github.com/vixshan/Mochi/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/vixshan/Mochi.svg?style=for-the-badge

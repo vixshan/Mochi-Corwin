@@ -2,9 +2,7 @@ const { CommandInteraction, Client } = require('discord.js');
 const { ContextMenuCommandBuilder } = require('discord.js');
 const Discord = require('discord.js');
 
-const model = require('../../database/models/badge');
 const Schema = require('../../database/models/profile');
-const CreditsSchema = require("../../database/models/votecredits");
 
 module.exports = {
     data: new ContextMenuCommandBuilder()

@@ -11,7 +11,7 @@ module.exports = async (client, interaction, args) => {
 
     client.embed({
         title: `❓・Support`,
-        desc: `Make your server even better with <@1009149789914546287>!`,
+        desc: `Get help from the bots support server and\nMake your server even better with <@1009149789914546287>!`,
         image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
         url: client.config.discord.serverInvite,
         components: [row],
