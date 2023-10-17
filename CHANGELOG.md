@@ -5,6 +5,13 @@
 * [#4](https://github.com/vixshan/Mochi/pull/4): Bump node-fetch from 2.7.0 to 3.3.2
 
 
+# Version: v1.0.0
+
+* [#2](https://github.com/vixshan/Mochi/pull/2): Bump jsdom from 21.1.2 to 22.1.0
+* [#3](https://github.com/vixshan/Mochi/pull/3): Bump chalk from 4.1.2 to 5.3.0
+* [#4](https://github.com/vixshan/Mochi/pull/4): Bump node-fetch from 2.7.0 to 3.3.2
+
+
 ## Mochi v1.0.2
 
 ### Developer
