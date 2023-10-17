@@ -1,3 +1,8 @@
+## Mochi v1.0.2
+
+### Developer
+* 🎉 Switched to 'kleur' from 'chalk' for console colors due recent chalk updates incompatibility.
+
 ## Mochi v1.0.1
 
 ### New

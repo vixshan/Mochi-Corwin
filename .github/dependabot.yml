@@ -15,4 +15,4 @@ updates:
     labels:
       - "dependencies"
     ignore:
-      - dependency-name: "discord.js"
+      - dependency-name: "node-fetch"

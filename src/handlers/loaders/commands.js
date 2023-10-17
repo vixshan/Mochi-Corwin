@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const { REST } = require('discord.js');
 const { Routes } = require('discord.js');
-const chalk = require('chalk');
+const kleur = require('kleur');
 const fs = require('fs');
 
 module.exports = (client) => {
@@ -12,13 +12,13 @@ module.exports = (client) => {
 
     const commands = [];
 
-    if (client.shard.ids[0] === 0) console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Loading commands`)), (chalk.white(`...`)))
+    if (client.shard.ids[0] === 0) console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), (kleur.green(`Loading commands`)), (kleur.white(`...`)))
     if (client.shard.ids[0] === 0) console.log(`\u001b[0m`);
 
     fs.readdirSync('./src/interactions').forEach(dirs => {
         const commandFiles = fs.readdirSync(`./src/interactions/${dirs}`).filter(files => files.endsWith('.js'));
 
-        if (client.shard.ids[0] === 0) console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`${commandFiles.length}`), (chalk.green(`commands of`)), chalk.red(`${dirs}`), (chalk.green(`loaded`)));
+        if (client.shard.ids[0] === 0) console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), kleur.red(`${commandFiles.length}`), (kleur.green(`commands of`)), kleur.red(`${dirs}`), (kleur.green(`loaded`)));
 
         for (const file of commandFiles) {
             const command = require(`${process.cwd()}/src/interactions/${dirs}/${file}`);
