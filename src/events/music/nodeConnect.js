@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const chalk = require('chalk');
+const kleur = require('kleur');
 
 module.exports = (client, node) => {
-    console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`Lavalink`), chalk.green(`connected!`))
+    console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), kleur.red(`Lavalink`), kleur.green(`connected!`))
 };

@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const chalk = require('chalk');
+const kleur = require('kleur');
 
 module.exports = (client, node, error) => {
-    console.log(chalk.red(chalk.bold(`ERROR`)), (chalk.white(`>>`)), chalk.white(`Node`), chalk.red(`${node.options.identifier}`), chalk.white(`had an error:`), chalk.red(`${error.message}`))
+    console.log(kleur.red(kleur.bold(`ERROR`)), (kleur.white(`>>`)), kleur.white(`Node`), kleur.red(`${node.options.identifier}`), kleur.white(`had an error:`), kleur.red(`${error.message}`))
 };

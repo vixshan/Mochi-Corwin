@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
-const chalk = require('chalk');
+const kleur = require('kleur');
 require('dotenv').config('./.env');
 const axios = require('axios');
 // Check if is up to date
 const { version } = require('.././package.json');
 axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').then(res => {
     if (res.data.tag_name !== version) {
-        console.log(chalk.red.bgYellow(`Your bot is not up to date! Please update to the latest version!`, version + ' -> ' + res.data.tag_name));
+        console.log(kleur.red.bgYellow(`Your bot is not up to date! Please update to the latest version!`, version + ' -> ' + res.data.tag_name));
     }
 }).catch(err => {
-    console.log(chalk.red.bgYellow(`Failed to check if bot is up to date!`));
+    console.log(kleur.red.bgYellow(`Failed to check if bot is up to date!`));
 });
 
 
@@ -45,13 +45,13 @@ if (process.env.TOPGG_TOKEN) {
     AutoPoster(process.env.TOPGG_TOKEN, manager);
 }
 console.clear();
-console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
+console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), (kleur.green(`Starting up`)), (kleur.white(`...`)))
 console.log(`\u001b[0m`)
-console.log(chalk.red(`© CorwinDev | 2021 - ${new Date().getFullYear()}`))
-console.log(chalk.red(`All rights reserved`))
+console.log(kleur.red(`© CorwinDev | 2021 - ${new Date().getFullYear()}`))
+console.log(kleur.red(`All rights reserved`))
 console.log(`\u001b[0m`)
 console.log(`\u001b[0m`)
-console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`Version ${require(`${process.cwd()}/package.json`).version}`), (chalk.green(`loaded`)))
+console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), kleur.red(`Version ${require(`${process.cwd()}/package.json`).version}`), (kleur.green(`loaded`)))
 console.log(`\u001b[0m`);
 
 manager.on('shardCreate', shard => {
@@ -76,7 +76,7 @@ manager.on('shardCreate', shard => {
         embeds: [embed],
     });
 
-    console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting`)), chalk.red(`Shard #${shard.id + 1}`), (chalk.white(`...`)))
+    console.log(kleur.blue(kleur.bold(`System`)), (kleur.white(`>>`)), (kleur.green(`Starting`)), kleur.red(`Shard #${shard.id + 1}`), (kleur.white(`...`)))
     console.log(`\u001b[0m`);
 
     shard.on("death", (process) => {
