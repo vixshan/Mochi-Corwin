@@ -11,7 +11,7 @@ updates:
       interval: "daily"
     open-pull-requests-limit: 5
     reviewers:
-      - "vikkshan"
+      - "vixshan"
     labels:
       - "dependencies"
     ignore:
