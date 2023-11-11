@@ -1,3 +1,3 @@
-module.exports = async (e) => {
-    console.error(e);
+module.exports = async e => {
+  console.error(e)
 }

@@ -1,11 +1,9 @@
-
 [![Version][version-shield]](version-url)
 [![Contributors][contributors-shield]][contributors-url]
-[![PRs][pr-shield]][pr-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+[![PRs][pr-shield]][pr-url] [![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Mochi&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
 
 <br />
@@ -34,31 +32,42 @@
 
 <!-- NOTICE -->
 
-### <img src="https://cdn.discordapp.com/emojis/1055803759831294013.png" width="20px" height="20px"> 》Notice 
-> You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by Vikshan
+### <img src="https://cdn.discordapp.com/emojis/1055803759831294013.png" width="20px" height="20px"> 》Notice
 
-> Mochi is a multipurpose Discord bot base in [Discord.js](https://github.com/Discordjs/discordjs)
-If you like this repository, feel free to leave a star ⭐ to motivate me!
+> You may not claim this as your own! The original source was created by
+> [Dotwood Media](https://github.com/DotwoodMedia) and
+> [Graphix Development](https://github.com/GraphixDevelopment). The source is
+> modified and being updated by Vikshan
+
+> Mochi is a multipurpose Discord bot base in
+> [Discord.js](https://github.com/Discordjs/discordjs) If you like this
+> repository, feel free to leave a star ⭐ to motivate me!
 
 <!-- ABOUT THE PROJECT -->
 
-## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px">》Description 
+## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px">》Description
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=vixshan&repo=Mochi&theme=tokyonight)](https://github.com/vixshan/Mochi)
+
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Feature
-- [x] Slash Commands 
+
+- [x] Slash Commands
 - [x] Upto date with Discord.js v14
 - [x] Automod
 - [x] Custom Commands
 - [x] Music Commands
 - [x] Tickets
 - [x] Utility Commands
-- [x] Suggestions 
+- [x] Suggestions
 - [x] Reaction Roles
 - [x] Family
-- [x] Giveaways 
+- [x] Giveaways
 - [x] Easy to use
-- [x] Don't wanna host it yourself? [Use our public bot](https://discord.com/api/oauth2/authorize?client_id=1009149789914546287&permissions=8&scope=bot%20applications.commands)
+- [x] Don't wanna host it yourself?
+      [Use our public bot](https://discord.com/api/oauth2/authorize?client_id=1009149789914546287&permissions=8&scope=bot%20applications.commands)
+
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
+
 <br />
 <p align="center">
   <a href="https://github.com/vixshan/Mochi">
@@ -67,52 +76,68 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 </p>
 
 ## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
+
 - NodeJs v17+
 - Java v13 for lavalink server.
 - PM2 for process management.
-- Discord Token. Get it from [Discord Developers Portal](https://discord.com/developers/applications)
-- Mongo Database URL. Get it from [MongoDB](https://cloud.mongodb.com/v2/635277bf9f5c7b5620db28a4#clusters)
-- Giphy API Token. Get it from [Giphy Developers Portal](https://developers.giphy.com/)
-- OpenAI API Key `for ai chatbot`. Get it from [OpenAi Developers Portal](https://beta.openai.com/account/api-keys)
+- Discord Token. Get it from
+  [Discord Developers Portal](https://discord.com/developers/applications)
+- Mongo Database URL. Get it from
+  [MongoDB](https://cloud.mongodb.com/v2/635277bf9f5c7b5620db28a4#clusters)
+- Giphy API Token. Get it from
+  [Giphy Developers Portal](https://developers.giphy.com/)
+- OpenAI API Key `for ai chatbot`. Get it from
+  [OpenAi Developers Portal](https://beta.openai.com/account/api-keys)
 - ClientID `for loading slash commands.`
-- Spotify client ID `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
-- Spotify client Secret `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
+- Spotify client ID `for spotify support`
+  [Click here to get](https://developer.spotify.com/dashboard/login)
+- Spotify client Secret `for spotify support`
+  [Click here to get](https://developer.spotify.com/dashboard/login)
 
 ## <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Installation Guide
 
 ### <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="15px" height="15px"> Installing via [NPM](https://www.npmjs.com/)
 
-
 - Clone the repo and install dependancies by running
+
 ```bash
 git clone https://github.com/vixshan/Mochi.git
 cd Mochi
 npm install
 ```
-- After cloning Fill all requirement in `.env` **(rename `.env.example` to `.env`)**
 
-- To start your bot for development 
+- After cloning Fill all requirement in `.env` **(rename `.env.example` to
+  `.env`)**
+
+- To start your bot for development
 
 ```js
 node src/index.js
 ```
-or 
+
+or
+
 ```js
 node .
 ```
 
-- Install pm2 globally by running 
+- Install pm2 globally by running
+
 ```js
 npm i -g pm2
 ```
 
 - To start your bot using pm2
+
 ```js
 npm run start
 ```
-> Note: If you are using pm2, make sure to install pm2 globally using `npm i -g pm2`
+
+> Note: If you are using pm2, make sure to install pm2 globally using
+> `npm i -g pm2`
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
+
 [![DiscordBanner](https://invidget.switchblade.xyz/uMgS9evnmv)](https://discord.gg/uMgS9evnmv)
 
 [Support Server](https://discord.gg/uMgS9evnmv) - Mochi's Support Server Invite
@@ -121,21 +146,29 @@ npm run start
 
 # Donate
 
- By Donating, You Will Help Me To Maintain This Project 
+By Donating, You Will Help Me To Maintain This Project
 
-<img src="https://cdn.discordapp.com/emojis/809085860632985630.png" width="15px" height="15px"> 》[Sponsor](https://github.com/sponsors/vixshan)
+<img src="https://cdn.discordapp.com/emojis/809085860632985630.png" width="15px" height="15px">
+》[Sponsor](https://github.com/sponsors/vixshan)
 
-[version-shield]: https://img.shields.io/github/package-json/v/vixshan/Mochi?style=for-the-badge
+[version-shield]:
+  https://img.shields.io/github/package-json/v/vixshan/Mochi?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
-[pr-shield]: https://img.shields.io/github/issues-pr/vixshan/Mochi?style=for-the-badge
+[pr-shield]:
+  https://img.shields.io/github/issues-pr/vixshan/Mochi?style=for-the-badge
 [pr-url]: https://github.com/vixshan/Mochi/pulls
-[contributors-shield]: https://img.shields.io/github/contributors/vixshan/Mochi.svg?style=for-the-badge
+[contributors-shield]:
+  https://img.shields.io/github/contributors/vixshan/Mochi.svg?style=for-the-badge
 [contributors-url]: https://github.com/vixshan/Mochi/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/vixshan/Mochi.svg?style=for-the-badge
+[forks-shield]:
+  https://img.shields.io/github/forks/vixshan/Mochi.svg?style=for-the-badge
 [forks-url]: https://github.com/vixshan/Mochi/network/members
-[stars-shield]: https://img.shields.io/github/stars/vixshan/Mochi.svg?style=for-the-badge
+[stars-shield]:
+  https://img.shields.io/github/stars/vixshan/Mochi.svg?style=for-the-badge
 [stars-url]: https://github.com/vixshan/Mochi/stargazers
-[issues-shield]: https://img.shields.io/github/issues/vixshan/Mochi.svg?style=for-the-badge
+[issues-shield]:
+  https://img.shields.io/github/issues/vixshan/Mochi.svg?style=for-the-badge
 [issues-url]: https://github.com/vixshan/Mochi/issues
-[license-shield]: https://img.shields.io/github/license/vixshan/Mochi.svg?style=for-the-badge
+[license-shield]:
+  https://img.shields.io/github/license/vixshan/Mochi.svg?style=for-the-badge
 [license-url]: https://github.com/vixshan/Mochi/blob/master/LICENSE
