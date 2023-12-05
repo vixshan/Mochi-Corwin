@@ -34,7 +34,6 @@ module.exports = client => {
 
       row.addComponents(menu)
       row2.addComponents(menu2)
-
       ;(sendComponents = row), row2
     }
 
@@ -57,7 +56,6 @@ module.exports = client => {
       row.addComponents(menu)
       row2.addComponents(menu2)
       row3.addComponents(menu3)
-
       ;(sendComponents = row), row2, row3
     }
 
@@ -86,7 +84,6 @@ module.exports = client => {
       row2.addComponents(menu2)
       row3.addComponents(menu3)
       row4.addComponents(menu4)
-
       ;(sendComponents = row), row2, row3, row4
     }
 
@@ -121,7 +118,6 @@ module.exports = client => {
       row3.addComponents(menu3)
       row4.addComponents(menu4)
       row5.addComponents(menu5)
-
       ;(sendComponents = row), row2, row3, row4, row5
     }
 
